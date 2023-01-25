@@ -15,8 +15,8 @@ I have actually some issue with my Windmeter (There was a big rain and the case 
 
 I inspired from:
 
-[Matt](https://github.com/matt8707/hass-config) here you can find his awesome custom UI.
-[Luke](https://github.com/lukevink/hass-config-lajv)
+[Matt](https://github.com/matt8707/hass-config) here you can find his awesome custom UI. <br/>
+[Luke](https://github.com/lukevink/hass-config-lajv) here you can find his awesome Floorplan. <br/>
 
 ![Screenshot](pictures/home.png)
 
