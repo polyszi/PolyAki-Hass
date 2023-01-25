@@ -1,0 +1,44 @@
+controllable_devices:
+  name: Controllable Devices
+  entities:
+    - vacuum.roborock_vacuum_s5
+    - switch.folyoso_lampa
+    - switch.folyoso2_lampa
+    - switch.tasmota_3
+light:
+  name: Lights
+  entities:
+    - switch.folyoso_lampa
+    - switch.folyoso_2_ik_lampa
+    - switch.konyha_lampa
+    - switch.etkezo_lampa
+    - switch.nappali_lampa
+    - switch.gyerekszoba_lampa
+    - switch.haloszoba_lampa
+    - switch.furdoszobai_led
+    - switch.wc_led
+    - switch.tasmota_3
+    - switch.nappali_szekerny_led
+    - switch.nappali_mennyezeti_led
+    - switch.haloszobai_led
+climate:
+  name: Lakás termosztát
+  entities:
+    - climate.gyerekszoba_radiator_gyerek
+    - climate.haloszoba_radiator_halo
+    - climate.nappali_radiator_nappali
+group_warning:
+  name: Riasztás csoport
+  entities:
+    - input_boolean.doorbell_riasztas
+    - input_boolean.tul_magas_villany
+  all: false
+group_vacuum_clean_rooms:
+  name: Szoba porszívózás
+  entities:
+    - input_boolean.folyoso
+    - input_boolean.gyerekszoba
+    - input_boolean.nappali
+    - input_boolean.haloszoba
+    - input_boolean.konyha
+  all:false

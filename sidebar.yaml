@@ -1,0 +1,72 @@
+- sensor:
+    - unique_id: sidebar
+      state: template
+      attributes:
+        active: >
+          <p>
+          {% set lights = [
+            states.switch.furdo_led,
+            states.switch.tasmota_6,
+            states.switch.tasmota_3,
+            states.switch.tasmota_11,
+            states.light.nappali_mennyezeti_led,
+            states.switch.tasmota_10,
+            states.switch.tasmota_7,
+            states.light.folyoso_lampa,
+            states.light.folyoso_2_ik_lampa,
+            states.light.konyha_lampa,
+            states.switch.etkezo_lampa,
+            states.switch.nappali_lampa,
+            states.light.gyerekszoba_lampa,
+            states.light.haloszoba_lampa
+          ] %}
+
+          {% set devices = [
+            states.media_player.playstation_4,
+            states.media_player.samsung_7_series_50,
+            states.media_player.samsung_q70_series_65,
+            states.climate.c6720472,
+            states.climate.gyerekszoba_radiator_gyerek,
+            states.climate.nappali_radiator_nappali
+          ] %}
+
+          {% set lights_on = lights | selectattr('state','eq','on') | list %}
+          {% set lights_name = lights | selectattr('state','eq','on') | map(attribute='name') | join(', ') %}
+
+          {% set devices_on = devices | selectattr('state','search','(on|cool|fan_only|playing)') | list %}
+          {% set devices_name = devices_on | map(attribute='name') | join(', ') %}
+
+          {% if (lights_on | length == 0) and (devices_on | length > 0) %}
+            {{ devices_name | regex_replace(',([^,]*)$',' och\\1') }} be van kapcsolva
+
+          {% elif (lights_on | length == 1) and (devices_on | length == 1) %}
+            {{ lights_name }} és {{devices_name }} be van kapcsolva
+
+          {% elif (lights_on | length == 1) and (devices_on | length > 1) %}
+            {{ lights_name }}, {{ devices_name | regex_replace(',([^,]*)$',' és\\1') }} be van kapcsolva
+
+          {% elif (lights_on | length > 1) and (devices_on | length == 1) %}
+            {{ lights_on | length }} lámpák és {{ devices_name }} be van kapcsolva
+
+          {% elif (lights_on | length > 1) and (devices_on | length > 1) %}
+            {{ lights_on | length }} lámpa, {{ devices_name | regex_replace(',([^,]*)$',' és\\1') }} be van kapcsolva
+
+          {% elif (lights_on | length == 1) and (devices_on | length == 0) %}
+            {{ lights_name }} be van kapcsolva
+
+          {% elif (lights_on | length > 1) and (devices_on | length == 0) %}
+            {{ lights_on | length }} lámpa világit
+
+          {% else %}
+            <font color='#d6d6d6'>Minden ki van kapcsolva</font>
+          {% endif %}
+          </p>       
+#        battery: >
+#          {% set entities = states.sensor 
+#            | selectattr('entity_id', 'search', 'battery')
+#            | map(attribute = 'entity_id') | list %}
+#          {% for sensor in entities if states(sensor) != 'unknown' and states(sensor) !=
+#          'unavailable' and states(sensor) != 'None' and states(sensor) | int(default=0) <= 5 %}
+#            {% if loop.first %} {{'\u26A0\uFE0F'}} Batteri {% else %}, {% endif %}
+#            {{ state_attr(sensor, 'friendly_name') }} {{ states(sensor) }}%
+#          {% endfor %}
