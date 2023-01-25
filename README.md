@@ -17,14 +17,19 @@ I inspired from:
 
 [Matt](https://github.com/matt8707/hass-config) here you can find his awesome custom UI. <br/>
 [Luke](https://github.com/lukevink/hass-config-lajv) here you can find his awesome Floorplan. <br/>
+[IIdar](https://community.home-assistant.io/t/xiaomi-cloud-vacuum-map-extractor/231292/555) - his Xiaomi Robot solution for clean up is the best waht I have ever seen. So I implemented it.
+
+I would like to say thank you guys. Your configuration helped me a lot.
 
 ![Screenshot](pictures/home.png)
 
 # Installation:
 This is not a theme and you will this not find in HACS.
+I share with you my code.
+If you want ot use, you have to implement(replace every sensor/ligth/switch with yours)
 
-
-
+# Freatures
+If someone push the doorbell button, then it will came up in the dashboard view and I will get telegramm message - when they push the button - and I will also get a picture from my doorbell camera.
 
 
 
