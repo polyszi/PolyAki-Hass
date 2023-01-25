@@ -13,16 +13,15 @@ I use home assistant on two tablet and on 4 phones. The first wall mounted table
 
 I have actually some issue with my Windmeter (There was a big rain and the case was not fully IP67, so the water goes in and unfortunately killed my ESP Board) But the newone is on the way, it will be replaced, if I get it.
 
+I inspired from:
+
+[Matt](https://github.com/matt8707/hass-config) here you can find his awesome custom UI.
+[Luke](https://github.com/lukevink/hass-config-lajv)
+
 ![Screenshot](pictures/home.png)
 
-
-
-
-
-
-
-
-
+# Installation:
+This is not a theme and you will this not find in HACS.
 
 
 
