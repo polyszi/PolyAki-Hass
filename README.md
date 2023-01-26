@@ -29,8 +29,8 @@ I share with you my code.
 If you want ot use, you have to implement(replace every sensor/ligth/switch with yours)
 
 # Freatures
-If someone push the doorbell button, then it will came up in the dashboard view and I will get telegramm message - when they push the button - and I will also get a picture from my doorbell camera.
-
+If someone push the doorbell button, then it will came up in the dashboard a new card and I will get telegramm message - when they push the button date/time and I will also get a picture from my doorbell camera.
+![Screenshot](pictures/doorbell.jpg)
 
 
 
