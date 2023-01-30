@@ -5,7 +5,8 @@ I am running [Home Assistant Container](https://www.home-assistant.io/installati
 I have setted up following containers: [Grafana](https://hub.docker.com/r/grafana/grafana), [Influxdb](https://hub.docker.com/_/influxdb), [Telegraf](https://hub.docker.com/_/telegraf), [Plex](https://hub.docker.com/r/linuxserver/plex), [ESPHome](https://hub.docker.com/r/esphome/esphome) <br/>
 
 I am using a lot of [Sonoff device](https://sonoff.tech/) (BASIC/RF/TH16/POW) with flashed with [Tasmota](https://tasmota.github.io/docs/). <br/>
-I use also a lot of [Wemos D1 mini](https://www.wemos.cc/en/latest/d1/d1_mini.html) with relay (Doorbell or [Windmeter(TX23)](https://www.lacrossetechnology.com/products/tx23u) mith [BH1750](https://www.mouser.com/datasheet/2/348/bh1750fvi-e-186247.pdf) and Temp-sensor).
+I use also a lot of [Wemos D1 mini](https://www.wemos.cc/en/latest/d1/d1_mini.html) with relay (Doorbell or [Windmeter(TX23)](https://www.lacrossetechnology.com/products/tx23u) mith [BH1750](https://www.mouser.com/datasheet/2/348/bh1750fvi-e-186247.pdf) and Temp-sensor). <br/>
+I have a lot of other sensor (Waterflow, window sensor, heating system, climate and in each room temp-hum sensors). I use a different branch but in Home Assistent the can work together.
 
 I use home assistant on two tablet and on 4 phones. The first wall mounted tablet is Huawei Mediapad M10 with [Fully Kiosk Browser](https://www.fully-kiosk.com/#get-kiosk-apps). The second tablet is Apple Ipad 4 mini. This is not mounted yet but it will be done on the next few months in the bedroom. I created two view, one fit with mobil and the otherone fit with tablets.
 
@@ -33,7 +34,10 @@ If someone push the doorbell button, then it will came up in the dashboard a new
 I have one other Alarm card what will showed if my power consuption goes over 18A. (I have only 20A in my apartment) And I will get also a telegram message. It will be showed till I don't push the "Észleltem" (I see) button. Then goes away and come back only if it will be happen again.
 ---Screenshot---
 
-
+Xiaomi Cloudmap Extractor which is combined with my floorplan.
+It showed a floorplan with the room where I can set which room should be cleared with [vacuum](https://xiaomi-store.hu/hu/porszivok/1283-xiaomi-roborock-s5-max-black-6970995781939.html). If the vacuum is started then this card will be change for the card where I see live on the floorplan where is my robot.
+---Screenshot---
+---Screenshot---
 
 
 
