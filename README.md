@@ -9,6 +9,9 @@ I have setted up following containers: <br/>
 [Plex](https://hub.docker.com/r/linuxserver/plex) <br/>
 [ESPHome](https://hub.docker.com/r/esphome/esphome) <br/>
 
+I am using a lot of [Sonoff device](https://sonoff.tech/) (BASIC/RF/TH16/POW) with flashed with [Tasmota](https://tasmota.github.io/docs/). <br/>
+I use also a lot of [Wemos D1 mini](https://www.wemos.cc/en/latest/d1/d1_mini.html) with relay (Doorbell or [Windmeter(TX23)](https://www.lacrossetechnology.com/products/tx23u) mith [BH1750](https://www.mouser.com/datasheet/2/348/bh1750fvi-e-186247.pdf) and Temp-sensor).
+
 I use home assistant on two tablet and on 4 phones. The first wall mounted tablet is Huawei Mediapad M10 with [Fully Kiosk Browser](https://www.fully-kiosk.com/#get-kiosk-apps). The second tablet is Apple Ipad 4 mini. This is not mounted yet but it will be done on the next few months in the bedroom. I created two view, one fit with mobil and the otherone fit with tablets.
 
 I have actually some issue with my Windmeter (There was a big rain and the case was not fully IP67, so the water goes in and unfortunately killed my ESP Board) But the newone is on the way, it will be replaced, if I get it.
@@ -29,8 +32,10 @@ I share with you my code.
 If you want ot use, you have to implement(replace every sensor/ligth/switch with yours)
 
 # Freatures
-If someone push the doorbell button, then it will came up in the dashboard a new card and I will get telegramm message - when they push the button date/time and I will also get a picture from my doorbell camera.
-![Screenshot](pictures/doorbell.jpg)
+If someone push the doorbell button, then it will came up in the dashboard a new card with my doorbell live stream and I will get a telegramm message - when they push the button date/time and I will also get a picture from my doorbell camera.
+![Screenshot](pictures/doorbell.jpg.jpg)
+
+I
 
 
 
