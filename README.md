@@ -37,7 +37,7 @@ If someone push the doorbell button, then it will came up in the dashboard a new
 I have one other Alarm card what will showed if my power consuption goes over 18A. (I have only 20A in my apartment) And I will get also a telegram message. It will be showed till I don't push the "Észleltem" (I see) button. Then goes away and come back only if it will be happen again.
 ---Screenshot---
 
-Xiaomi Cloudmap Extractor which is combined with my floorplan.
+[Xiaomi Cloudmap Extractor](https://community.home-assistant.io/t/xiaomi-cloud-vacuum-map-extractor) which is combined with my floorplan.
 It showed a floorplan with the room where I can set which room should be cleared with [vacuum](https://xiaomi-store.hu/hu/porszivok/1283-xiaomi-roborock-s5-max-black-6970995781939.html). If the vacuum is started then this card will be change for the card where I see live on the floorplan where is my robot.
 ---Screenshot---
 ---Screenshot---
