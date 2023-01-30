@@ -28,6 +28,9 @@ I share with you my code.
 If you want ot use, you have to implement(replace every sensor/ligth/switch with yours)
 
 # Freatures
+
+I have a menu card on the screen left side which is appear in each view and I also have a footer. 
+
 If someone push the doorbell button, then it will came up in the dashboard a new card with my doorbell live stream and I will get a telegramm message - when they push the button date/time and I will also get a picture from my doorbell camera.
 ![Screenshot](pictures/doorbell.jpg.jpg)
 
