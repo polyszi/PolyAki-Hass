@@ -39,7 +39,7 @@ It showed a floorplan with the room where I can set which room should be cleared
 ---Screenshot---
 ---Screenshot---
 
-
+Heating System, there you can see three thermostat for the three rooms. I have radiators only these rooms, so this is a reason why I have only there thermostat and one for the climate.
 
 
 
